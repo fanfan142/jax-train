@@ -65,6 +65,7 @@ image: ghcr.io/<org>/<repo>:v0.1.0
 
 运行时挂载你的 Aero-Hand 仓库目录（假设 AutoDL 中为 `/workspace/aero-hand`）。
 镜像已内置 MuJoCo Menagerie 模型库，并设置 `MUJOCO_MENAGERIE_PATH=/opt/mujoco_menagerie`。
+为避免 Python 3.12 下的 `mujoco_py` 编译问题，默认使用 `gym==0.23.1`，不启用 `gym[mujoco]` 额外依赖。
 
 ## 运行 PPO 训练示例
 
