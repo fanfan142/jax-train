@@ -1,5 +1,4 @@
 dm_control
-mujoco_menagerie
 optax
 flax
 rscope

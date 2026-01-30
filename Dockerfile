@@ -83,10 +83,13 @@ COPY --from=builder /opt/venv /opt/venv
 
 WORKDIR /workspace
 
+RUN git clone --depth 1 https://github.com/google-deepmind/mujoco_menagerie.git /opt/mujoco_menagerie
+
 ENV XLA_FLAGS=--xla_gpu_cuda_data_dir=/usr/local/cuda \
   NVIDIA_VISIBLE_DEVICES=all \
   NVIDIA_DRIVER_CAPABILITIES=compute,utility,graphics \
   JAX_PLATFORM_NAME=gpu \
-  MUJOCO_GL=egl
+  MUJOCO_GL=egl \
+  MUJOCO_MENAGERIE_PATH=/opt/mujoco_menagerie
 
 CMD ["/bin/bash"]
