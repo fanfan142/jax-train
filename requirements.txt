@@ -4,6 +4,7 @@ optax
 flax
 rscope
 gym[mujoco]
+tensorboardX==2.6.2.2
 numpy
 scipy
 matplotlib

@@ -1,8 +1,9 @@
 # Aero-Hand JAX PPO Docker 镜像
 
 本仓库提供用于 Aero-Hand 强化学习训练的完整 Docker 镜像构建方案，
-基于 **CUDA 12 + Python 3.12 + JAX GPU + DeepMind Mujoco Playground + PPO**，
-可直接用于 AutoDL 自定义镜像与训练任务。
+基于 **CUDA 12 + Python 3.12 + JAX GPU + DeepMind MuJoCo Playground + PPO**，
+可直接用于 AutoDL 自定义镜像与训练任务，并确保镜像体积尽可能小、
+依赖版本合理且环境完整。
 
 ## 目录结构
 
@@ -24,6 +25,17 @@
 ```bash
 IMAGE_NAME=my-aero-hand ./scripts/build.sh v0.1.0
 ```
+
+构建参数（可选）：
+
+- `CUDA_VERSION`：CUDA 版本（默认 12.4.1）
+- `MUJOCO_PLAYGROUND_REF`：mujoco_playground 的 Git 引用（默认 main，可指定 tag/commit）
+
+```bash
+CUDA_VERSION=12.4.1 MUJOCO_PLAYGROUND_REF=main ./scripts/build.sh v0.1.0
+```
+
+说明：镜像采用多阶段构建，最终仅保留运行时依赖与虚拟环境，尽可能减小体积。
 
 ## 推送镜像到 Docker Hub / GHCR
 
