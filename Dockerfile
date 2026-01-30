@@ -55,6 +55,9 @@ RUN apt-get update \
   && apt-get install -y --no-install-recommends \
     ca-certificates \
     software-properties-common \
+  && add-apt-repository ppa:deadsnakes/ppa \
+  && apt-get update \
+  && apt-get install -y --no-install-recommends \
     libgl1 \
     libegl1 \
     libglx-mesa0 \
@@ -66,9 +69,6 @@ RUN apt-get update \
     libxinerama1 \
     libxcursor1 \
     libxi6 \
-  && add-apt-repository ppa:deadsnakes/ppa \
-  && apt-get update \
-  && apt-get install -y --no-install-recommends \
     python3.12 \
     python3.12-distutils \
     python3.12-venv \
