@@ -8,7 +8,7 @@
 ## 目录结构
 
 - `Dockerfile`：CUDA12 + Python3.12 + JAX GPU 环境
-- `requirements.txt`：PPO 训练与 Mujoco 依赖
+- `requirements.txt`：PPO 训练与 MuJoCo 依赖
 - `scripts/build.sh`：本地构建镜像
 - `scripts/push.sh`：推送镜像到 DockerHub/GHCR
 - `examples/run_training.sh`：训练示例脚本
