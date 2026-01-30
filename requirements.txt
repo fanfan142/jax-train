@@ -3,7 +3,6 @@ mujoco_menagerie
 optax
 flax
 rscope
-gym
 gym[mujoco]
 numpy
 scipy

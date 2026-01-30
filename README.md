@@ -66,6 +66,9 @@ cd /workspace/aero-hand
 
 `learning/train_jax_ppo.py` 来自你挂载的 Aero-Hand 仓库，请确保脚本路径存在。
 
+该示例脚本位于本仓库的 `examples/` 目录，建议复制到 Aero-Hand 仓库根目录后运行，
+以保证相对路径 `learning/train_jax_ppo.py` 可正常解析。
+
 ## 挂载 Aero-Hand 仓库进行训练
 
 本地运行容器示例：
