@@ -1,0 +1,16 @@
+jax[cuda12]
+dm_control
+mujoco_menagerie
+optax
+flax
+rscope
+gym
+gym[mujoco]
+numpy
+scipy
+matplotlib
+hydra-core
+omegaconf
+ml-collections
+imageio
+imageio-ffmpeg
