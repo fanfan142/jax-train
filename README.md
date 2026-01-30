@@ -64,6 +64,8 @@ cd /workspace/aero-hand
 
 训练日志会输出到 `./logs`，结果保存在 `./results/run1`。
 
+`learning/train_jax_ppo.py` 来自你挂载的 Aero-Hand 仓库，请确保脚本路径存在。
+
 ## 挂载 Aero-Hand 仓库进行训练
 
 本地运行容器示例：

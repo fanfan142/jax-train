@@ -1,4 +1,3 @@
-jax[cuda12]
 dm_control
 mujoco_menagerie
 optax
