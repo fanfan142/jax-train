@@ -1,0 +1,14 @@
+dm_control
+optax
+flax
+rscope
+gym==0.23.1
+tensorboardX==2.6.2.2
+numpy
+scipy
+matplotlib
+hydra-core
+omegaconf
+ml-collections
+imageio
+imageio-ffmpeg
