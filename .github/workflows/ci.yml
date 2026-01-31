@@ -43,7 +43,7 @@ jobs:
           fi
 
           # Docker tag must match [a-z0-9_.-]; normalize branch/tag names.
-          normalized_ref="$(echo "${ref}" | tr '[:upper:]' '[:lower:]' | sed 's#[^a-z0-9._-]#-#g')"
+          normalized_ref="$(echo "${ref}" | tr '[:upper:]' '[:lower:]' | sed 's#[^a-z0-9.-]#-#g')"
 
           if [[ "${ref}" == "main" ]]; then
             tag="latest"
