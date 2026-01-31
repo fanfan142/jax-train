@@ -55,7 +55,7 @@ CUDA_VERSION=12.4.1 MUJOCO_PLAYGROUND_REF=main ./scripts/build.sh v0.1.0
 IMAGE_NAME=my-aero-hand ./scripts/push.sh ghcr.io/<org>/<repo> v0.1.0
 ```
 
-> 提示：仓库已提供 GitHub Actions CI（`.github/workflows/ci.yml`），在 `main` 分支推送或打 tag 时会自动构建镜像并推送到 `ghcr.io/<owner>/aero-hand-jax:<ref>`，无须本地 `docker login`。
+> Tip: GitHub Actions CI (`.github/workflows/ci.yml`) builds and (on pushes to `main` or any tag pushes) pushes `ghcr.io/<your-org-or-user>/aero-hand-jax:<ref>` automatically—no local `docker login` needed.
 
 ## 在 AutoDL 中使用镜像
 
